@@ -8,3 +8,5 @@ export type Produto={
     categoriaIds: number[]
     ativo: boolean;
 }
+
+export type ProdutoRequest = Omit<Produto, 'id'>

@@ -8,6 +8,7 @@ function Header() {
     const navigate = useNavigate();
     const [busca, setBusca] = useState('');
 
+
     function ExpRecMenu() {
         const header = document.querySelector('header'); // Ou o container do menu
 
@@ -38,10 +39,7 @@ function Header() {
                     onSubmit={evento => {
                         evento.preventDefault();
                         navigate(`/produtos?q=${encodeURIComponent(busca.trim())}`);
-
-                    }
-
-
+                        }
                     }
 
 
